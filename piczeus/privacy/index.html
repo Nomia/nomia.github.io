@@ -102,6 +102,12 @@
         padding: 20px 24px;
       }
 
+      .note {
+        border-left: 3px solid var(--accent);
+        margin: 20px 0;
+        padding-left: 16px;
+      }
+
       .meta {
         color: var(--muted);
         margin-top: 12px;
@@ -145,17 +151,26 @@
       </header>
 
       <section id="english" aria-labelledby="english-title">
-        <h2 id="english-title">English</h2>
+        <h2 id="english-title">English version</h2>
         <div class="summary">
           <p>
-            PicZeus is designed to compress images locally in your browser. The
-            current version does not include user accounts, analytics,
-            advertising trackers, payment collection, remote logging, or server
-            upload for image compression.
+            This Privacy Policy explains how the PicZeus Chrome extension
+            handles information. PicZeus is designed for local image
+            compression in the browser. The current version does not include
+            user accounts, analytics, advertising trackers, payment collection,
+            remote logging, or server upload for image compression.
           </p>
         </div>
 
-        <h3>Information PicZeus processes</h3>
+        <h3>Scope</h3>
+        <p>
+          This policy applies to the PicZeus Chrome extension and its extension
+          pages, including the popup, workspace, options page, and the
+          user-initiated right-click image workflow. It does not apply to
+          third-party websites that you visit in Chrome.
+        </p>
+
+        <h3>Information PicZeus processes locally</h3>
         <ul>
           <li>
             Images and folders you explicitly select from your device are
@@ -173,11 +188,24 @@
           </li>
         </ul>
 
+        <div class="note">
+          <p>
+            PicZeus does not ask for your name, address, account credentials,
+            payment information, health information, location, or contact list.
+          </p>
+        </div>
+
         <h3>How information is used</h3>
         <p>
           The information above is used only to provide PicZeus' single purpose:
           local image compression, preview, and download/export of optimized
           files.
+        </p>
+        <p>
+          PicZeus may read image metadata or image dimensions when your browser
+          exposes that information during local processing. This is used to
+          render previews, calculate size savings, and create the optimized
+          output you requested.
         </p>
 
         <h3>Data collection and sharing</h3>
@@ -192,7 +220,27 @@
             PicZeus does not upload selected local images to a remote server for
             compression in the current version.
           </li>
+          <li>
+            PicZeus does not operate a backend service that receives your image
+            files, compression queue, settings, or generated outputs.
+          </li>
         </ul>
+
+        <h3>Local storage and retention</h3>
+        <p>
+          PicZeus stores preferences in Chrome extension storage on your device
+          so the extension can remember your language, theme, default preset,
+          and compression settings. These preferences remain on your device
+          until you change them, clear extension data, reset Chrome data, or
+          uninstall the extension.
+        </p>
+        <p>
+          Image files selected for compression are kept in the active browser
+          session only as needed to show the queue, previews, and results. If
+          you clear the queue, close the workspace, reload the extension page,
+          or uninstall the extension, PicZeus does not keep a separate remote
+          copy.
+        </p>
 
         <h3>Permissions</h3>
         <ul>
@@ -214,6 +262,33 @@
           </li>
         </ul>
 
+        <h3>Remote code</h3>
+        <p>
+          PicZeus does not use remote JavaScript or remote WebAssembly. The
+          extension's UI and compression logic are packaged with the extension.
+        </p>
+
+        <h3>Your controls</h3>
+        <ul>
+          <li>You choose which local images or folders to add to PicZeus.</li>
+          <li>
+            You choose whether to use the right-click image action on a webpage.
+          </li>
+          <li>
+            You can clear the compression queue inside the extension workspace.
+          </li>
+          <li>
+            You can remove PicZeus or clear its extension data through Chrome.
+          </li>
+        </ul>
+
+        <h3>Children's privacy</h3>
+        <p>
+          PicZeus is a general-purpose image utility. It is not directed to
+          children and does not knowingly collect personal information from
+          children.
+        </p>
+
         <h3>Changes to this policy</h3>
         <p>
           If PicZeus adds accounts, cloud services, analytics, payments, or any
@@ -229,15 +304,21 @@
       </section>
 
       <section id="chinese" lang="zh-Hans" aria-labelledby="chinese-title">
-        <h2 id="chinese-title">简体中文</h2>
+        <h2 id="chinese-title">简体中文版本</h2>
         <div class="summary">
           <p>
-            PicZeus 设计用于在浏览器本地压缩图片。当前版本不包含用户账号、分析统计、
-            广告追踪、支付收款、远程日志，也不会为了图片压缩把本地选择的图片上传到服务器。
+            本隐私政策说明 PicZeus Chrome 扩展如何处理信息。PicZeus 设计用于在浏览器本地压缩图片。
+            当前版本不包含用户账号、分析统计、广告追踪、支付收款、远程日志，也不会为了图片压缩把本地选择的图片上传到服务器。
           </p>
         </div>
 
-        <h3>PicZeus 处理的信息</h3>
+        <h3>适用范围</h3>
+        <p>
+          本政策适用于 PicZeus Chrome 扩展及其扩展页面，包括弹窗、工作区、设置页，以及用户主动触发的网页图片右键流程。
+          本政策不适用于你在 Chrome 中访问的第三方网站。
+        </p>
+
+        <h3>PicZeus 在本地处理的信息</h3>
         <ul>
           <li>
             你主动从设备中选择的图片和文件夹，会通过浏览器 API 在扩展工作区本地处理。
@@ -252,9 +333,19 @@
           </li>
         </ul>
 
+        <div class="note">
+          <p>
+            PicZeus 不会要求你提供姓名、地址、账号凭据、支付信息、健康信息、位置或通讯录。
+          </p>
+        </div>
+
         <h3>信息用途</h3>
         <p>
           上述信息仅用于实现 PicZeus 的单一用途：本地图片压缩、压缩前后预览，以及下载或导出优化后的文件。
+        </p>
+        <p>
+          当浏览器在本地处理过程中提供图片元数据或尺寸信息时，PicZeus 可能读取这些信息，用于生成预览、计算节省体积，
+          以及创建你请求的优化输出文件。
         </p>
 
         <h3>数据收集与共享</h3>
@@ -263,7 +354,18 @@
           <li>PicZeus 不向第三方转移用户数据。</li>
           <li>PicZeus 不会将用户数据用于广告、分析、信用评估或与图片压缩无关的目的。</li>
           <li>当前版本不会为了压缩图片而把你选择的本地图片上传到远程服务器。</li>
+          <li>PicZeus 当前不运营接收你的图片文件、压缩队列、设置或输出文件的后端服务。</li>
         </ul>
+
+        <h3>本地存储与保留</h3>
+        <p>
+          PicZeus 会在你的设备上的 Chrome 扩展存储中保存偏好设置，以便记住语言、主题、默认预设和压缩设置。
+          这些偏好会保留在本地，直到你修改设置、清除扩展数据、重置 Chrome 数据或卸载扩展。
+        </p>
+        <p>
+          被选择用于压缩的图片文件只会在当前浏览器会话中用于显示队列、预览和结果。你清空队列、关闭工作区、重新加载扩展页面或卸载扩展后，
+          PicZeus 不会保留单独的远程副本。
+        </p>
 
         <h3>权限说明</h3>
         <ul>
@@ -275,6 +377,24 @@
             以便 PicZeus 获取你选择的图片 URL。
           </li>
         </ul>
+
+        <h3>远程代码</h3>
+        <p>
+          PicZeus 不使用远程 JavaScript 或远程 WebAssembly。扩展的界面和压缩逻辑均随扩展包一起提供。
+        </p>
+
+        <h3>你的控制权</h3>
+        <ul>
+          <li>你可以自行选择哪些本地图片或文件夹加入 PicZeus。</li>
+          <li>你可以自行决定是否在网页图片上使用右键 PicZeus 操作。</li>
+          <li>你可以在扩展工作区中清空压缩队列。</li>
+          <li>你可以通过 Chrome 移除 PicZeus 或清除其扩展数据。</li>
+        </ul>
+
+        <h3>儿童隐私</h3>
+        <p>
+          PicZeus 是通用图片工具，不面向儿童，也不会有意收集儿童个人信息。
+        </p>
 
         <h3>政策更新</h3>
         <p>
